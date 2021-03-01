@@ -5,6 +5,6 @@
 
 // Solution:
 const search = (searchTerm) => {
-  let search = new RegExp(searchTerm, 'i');
-  return TITLES.filter((title) => {return search.test(title)});
+  const re = new RegExp(searchTerm, 'i');
+  return TITLES.filter((title) => {return re.test(title)});
 }
